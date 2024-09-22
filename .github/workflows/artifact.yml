@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Create a text file
       run: echo "Hello, world!" > hello.txt
@@ -23,9 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download Artificat
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         path: meow/
     - name: Runing the file
       run: cat ./artifacts/hello.txt
-      
