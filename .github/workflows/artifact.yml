@@ -28,4 +28,4 @@ jobs:
     - name: Runing the file
       run: |
         ls
-        cat ./artifacts/hello.txt
+        cat hello-artifact/hello.txt
