@@ -24,5 +24,7 @@ jobs:
     steps:
     - name: Download Artificat
       uses: actions/download-artifact@v4
+      with:
+        path: /
     - name: Runing the file
       run: cat ./artifacts/hello.txt
